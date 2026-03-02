@@ -1,520 +1,749 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Caçane Maloz</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Caçane Maloz</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: iPortfolio
   * Updated: May 30 2023 with Bootstrap v5.3.0
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img1.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Caçane Maloz</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a target="_blank" href="https://www.instagram.com/camalozz/" class="instagram"><i
-              class="bx bxl-instagram"></i></a>
-          <a target="_blank" href="https://www.linkedin.com/in/ca%C3%A7ane-maloz-612406235/" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-          <a target="_blank" href="https://vsco.co/camalozz/gallery" class="vsco"><i class="bx"
-              style="font-size: 10px;">VSCO</i></a>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img
+            src="assets/img/profile-img1.jpg"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light"><a href="index.html">Caçane Maloz</a></h1>
+          <div class="social-links mt-3 text-center">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/camalozz/"
+              class="instagram"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/ca%C3%A7ane-maloz-612406235/"
+              class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://vsco.co/camalozz/gallery"
+              class="vsco"
+              ><i class="bx" style="font-size: 10px">VSCO</i></a
+            >
+          </div>
         </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li>
+              <a href="#hero" class="nav-link scrollto active"
+                ><i class="bx bx-home"></i> <span>Inicio</span></a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav-link scrollto"
+                ><i class="bx bx-user"></i> <span>Quem sou eu</span></a
+              >
+            </li>
+            <li>
+              <a href="#resume" class="nav-link scrollto"
+                ><i class="bx bx-file-blank"></i> <span>Curriculo</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link scrollto"
+                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+              >
+            </li>
+
+            <li>
+              <a href="#videos" class="nav-link scrollto"
+                ><i class="bx bx-play-circle"></i> <span>Vídeos</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link scrollto"
+                ><i class="bx bx-envelope"></i> <span>Contato</span></a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="./blog/" class="nav-link scrollto">
+                <i class="bx bx-world"></i> <span>Blog de Gastronômia</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
       </div>
+    </header>
+    <!-- End Header -->
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Quem sou eu</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Curriculo</span></a>
-          </li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Portfolio</span></a></li>
-          <li><a href="#perspectives" class="nav-link scrollto"><i class="bx bx-bulb"></i> <span>Perspectivas
-                Jornalísticas</span></a></li>
-          <li><a href="#videos" class="nav-link scrollto"><i class="bx bx-play-circle"></i> <span>Vídeos</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contato</span></a></li>
-          <li>
-            <a target="_blank" href="./blog/" class="nav-link scrollto">
-              <i class="bx bx-world"></i> <span>Blog de Gastronômia</span>
-            </a>
-          </li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header>
-  <!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Caçane Maloz</h1>
-      <p><span class="typed" data-typed-items="Jornalista"></span></p>
-    </div>
-  </section>
-  <!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Sobre</h2>
-          <p>
-
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img1.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Jornalista</h3>
-            <p class="fst-italic">
-              A comunicação sempre fez parte da minha vida. A escrita, em especial, sempre esteve comigo e está entre as
-              minhas atividades favoritas. Foram quatro anos dedicados ao teatro, uma vivência que fortaleceu minha
-              expressão, minha escuta ativa e minha capacidade de me conectar com diferentes públicos.
-
-              Sou jornalista formada pela FURB, onde construí experiências que reforçaram minha afinidade com produção
-              de conteúdo, gravação de vídeo e adaptação de linguagem para diferentes canais e contextos.
-
-              Entre essas vivências, destaco a criação de roteiros para podcasts, gravação e edição de áudios, locução e
-              divulgação de conteúdos em redes sociais e releases. Na Senior Sistemas, atuei por mais de um ano com
-              comunicação interna, produzindo newsletters, campanhas e materiais informativos para o público interno.
-              Também desenvolvi conteúdos voltados ao fortalecimento da marca empregadora nos canais institucionais e
-              nas redes sociais.
-
-              Atualmente, trabalho como Technical Writer no ERP Senior Mega, onde sou responsável pela documentação dos
-              módulos Fiscal e Contabilidade, traduzindo conteúdos técnicos e complexos em uma linguagem clara,
-              acessível e útil para os clientes.
-
-            </p>
-          </div>
-        </div>
-
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="hero-container" data-aos="fade-in">
+        <h1>Caçane Maloz</h1>
+        <p><span class="typed" data-typed-items="Jornalista"></span></p>
       </div>
     </section>
-    <!-- End About Section -->
+    <!-- End Hero -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Experiência Profissional</h3>
-            <div class="resume-item">
-              <h4>Technical Writer</h4>
-              <h5>08/2025 - o momento</h5>
-              <p><em>Senior Sistemas – ERP Senior Mega, Presencial</em></p>
-              <ul>
-                <li>Produção e manutenção do Manual do Usuário dos módulos Fiscal e Contabilidade.</li>
-                <li>Tradução de conteúdos técnicos complexos em materiais claros e acessíveis aos clientes.</li>
-                <li>Documentação de funcionalidades, fluxos, novas implementações e requisitos legais.</li>
-                <li>Criação de textos instrucionais seguindo boas práticas de UX Writing e documentação técnica.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Assistente de Comunicação Interna e Endomarketing</h4>
-              <h5>04/2025 - 08/2025</h5>
-              <p><em>Senior Sistemas, Presencial</em></p>
-              <ul>
-                <li>Atuação nas mesmas frentes desenvolvidas como estagiária, assumindo maior autonomia e
-                  responsabilidades estratégicas.</li>
-                <li>Desenvolvimento de campanhas internas e mensagens corporativas alinhadas ao posicionamento da marca.
-                </li>
-                <li>Produção de conteúdos multimídia e materiais de employer branding para fortalecer a cultura e a
-                  experiência do colaborador.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Estagiária de Comunicação Interna e Endomarketing</h4>
-              <h5>07/2024 - 04/2025</h5>
-              <p><em>Senior Sistemas, Presencial</em></p>
-              <ul>
-                <li>Criação de conteúdos internos para diferentes áreas da empresa.</li>
-                <li>Produção de materiais de employer branding (posts, roteiros de vídeo e campanhas que reforçam a
-                  marca empregadora).</li>
-                <li>Participação em projetos como Movimento Feedback, Movimento Carreira na Senior e comunicações de
-                  Avaliação de Competências e PDI.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Monitoria - Laboratório de Áudio</h4>
-              <h5>01/2024 - 07/2024</h5>
-              <p><em>Universidade Regional de Blumenau (FURB), Santa Catarina</em></p>
-              <ul>
-                <li>
-                  Principais atividades: Gravação e edição de áudios, criação de roteiros para podcasts e divulgação das
-                  atividades do laboratório por meio de redes sociais e releases.
-                </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Bolsista - Laboratório de Áudio</h4>
-              <h5>04/2023 - 12/2023</h5>
-              <p><em>Universidade Regional de Blumenau (FURB), Santa Catarina</em></p>
-              <ul>
-                <li>
-                  Criação de roteiros para podcasts e edição de áudios.
-                </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Estágio - Setor Comercial</h4>
-              <h5>07/2022 - 12/2023</h5>
-              <p><em>Universidade Regional de Blumenau (FURB), Santa Catarina</em></p>
-              <ul>
-                <li>
-                  Criar ações, textos e mensagens para
-                  o setor comercial da Universidade.
-                </li>
-              </ul>
-            </div>
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>Sobre</h2>
+            <p></p>
           </div>
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Educação</h3>
-            <div class="resume-item">
-              <h4>Bacharelado Jornalismo</h4>
-              <h5>2022 - 2025</h5>
-              <p><em>Universidade Regional de Blumenau (FURB), Santa Catarina</em></p>
+
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+              <img src="assets/img/profile-img1.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3>Jornalista</h3>
+              <p class="fst-italic">
+                A comunicação sempre fez parte da minha vida. A escrita, em
+                especial, sempre esteve comigo e está entre as minhas atividades
+                favoritas. Foram quatro anos dedicados ao teatro, uma vivência
+                que fortaleceu minha expressão, minha escuta ativa e minha
+                capacidade de me conectar com diferentes públicos. Sou
+                jornalista formada pela FURB, onde construí experiências que
+                reforçaram minha afinidade com produção de conteúdo, gravação de
+                vídeo e adaptação de linguagem para diferentes canais e
+                contextos. Entre essas vivências, destaco a criação de roteiros
+                para podcasts, gravação e edição de áudios, locução e divulgação
+                de conteúdos em redes sociais e releases. Na Senior Sistemas,
+                atuei por mais de um ano com comunicação interna, produzindo
+                newsletters, campanhas e materiais informativos para o público
+                interno. Também desenvolvi conteúdos voltados ao fortalecimento
+                da marca empregadora nos canais institucionais e nas redes
+                sociais. Atualmente, trabalho como Technical Writer no ERP
+                Senior Mega, onde sou responsável pela documentação dos módulos
+                Fiscal e Contabilidade, traduzindo conteúdos técnicos e
+                complexos em uma linguagem clara, acessível e útil para os
+                clientes.
+              </p>
             </div>
           </div>
         </div>
+      </section>
+      <!-- End About Section -->
 
-      </div>
-    </section>
-    <!-- End Resume Section -->
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Experiência Profissional</h3>
+              <div class="resume-item">
+                <h4>Technical Writer</h4>
+                <h5>08/2025 - o momento</h5>
+                <p><em>Senior Sistemas – ERP Senior Mega, Presencial</em></p>
+                <ul>
+                  <li>
+                    Produção e manutenção do Manual do Usuário dos módulos
+                    Fiscal e Contabilidade.
+                  </li>
+                  <li>
+                    Tradução de conteúdos técnicos complexos em materiais claros
+                    e acessíveis aos clientes.
+                  </li>
+                  <li>
+                    Documentação de funcionalidades, fluxos, novas
+                    implementações e requisitos legais.
+                  </li>
+                  <li>
+                    Criação de textos instrucionais seguindo boas práticas de UX
+                    Writing e documentação técnica.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Assistente de Comunicação Interna e Endomarketing</h4>
+                <h5>04/2025 - 08/2025</h5>
+                <p><em>Senior Sistemas, Presencial</em></p>
+                <ul>
+                  <li>
+                    Atuação nas mesmas frentes desenvolvidas como estagiária,
+                    assumindo maior autonomia e responsabilidades estratégicas.
+                  </li>
+                  <li>
+                    Desenvolvimento de campanhas internas e mensagens
+                    corporativas alinhadas ao posicionamento da marca.
+                  </li>
+                  <li>
+                    Produção de conteúdos multimídia e materiais de employer
+                    branding para fortalecer a cultura e a experiência do
+                    colaborador.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Estagiária de Comunicação Interna e Endomarketing</h4>
+                <h5>07/2024 - 04/2025</h5>
+                <p><em>Senior Sistemas, Presencial</em></p>
+                <ul>
+                  <li>
+                    Criação de conteúdos internos para diferentes áreas da
+                    empresa.
+                  </li>
+                  <li>
+                    Produção de materiais de employer branding (posts, roteiros
+                    de vídeo e campanhas que reforçam a marca empregadora).
+                  </li>
+                  <li>
+                    Participação em projetos como Movimento Feedback, Movimento
+                    Carreira na Senior e comunicações de Avaliação de
+                    Competências e PDI.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Monitoria - Laboratório de Áudio</h4>
+                <h5>01/2024 - 07/2024</h5>
+                <p>
+                  <em
+                    >Universidade Regional de Blumenau (FURB), Santa
+                    Catarina</em
+                  >
+                </p>
+                <ul>
+                  <li>
+                    Principais atividades: Gravação e edição de áudios, criação
+                    de roteiros para podcasts e divulgação das atividades do
+                    laboratório por meio de redes sociais e releases.
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Bolsista - Laboratório de Áudio</h4>
+                <h5>04/2023 - 12/2023</h5>
+                <p>
+                  <em
+                    >Universidade Regional de Blumenau (FURB), Santa
+                    Catarina</em
+                  >
+                </p>
+                <ul>
+                  <li>Criação de roteiros para podcasts e edição de áudios.</li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Estágio - Setor Comercial</h4>
+                <h5>07/2022 - 12/2023</h5>
+                <p>
+                  <em
+                    >Universidade Regional de Blumenau (FURB), Santa
+                    Catarina</em
+                  >
+                </p>
+                <ul>
+                  <li>
+                    Atuação no setor comercial da universidade, com foco nas
+                    atividades de comunicação. Desenvolvi ações de comunicação,
+                    textos e mensagens institucionais voltadas à divulgação de
+                    cursos e iniciativas, apoiando a comunicação com públicos
+                    internos e externos.
+                  </li>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfólio</h2>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Todos</li>
-              <li data-filter=".filter-publicados">Publicados</li>
-              <li data-filter=".filter-entrevistas">Entrevistas</li>
-              <li data-filter=".filter-roteiro">Roteiros de Podcast</li>
-              <li data-filter=".filter-academicos">Trabalhos acadêmicos</li>
-              <li data-filter=".filter-podcasts">Podcasts</li>
-              <!-- <li data-filter=".filter-web">Pessoais</li> -->
-            </ul>
+                  <li>
+                    Também atuei com CRM, acompanhando fluxos de contato,
+                    organização de leads e etapas da jornada, contribuindo para
+                    a comunicação ao longo do funil e para o relacionamento com
+                    potenciais alunos.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up">
+              <h3 class="resume-title">Educação</h3>
+              <div class="resume-item">
+                <h4>Bacharelado Jornalismo</h4>
+                <h5>2022 - 2025</h5>
+                <p>
+                  <em
+                    >Universidade Regional de Blumenau (FURB), Santa
+                    Catarina</em
+                  >
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      <!-- End Resume Section -->
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-          <div class="portfolio-item filter-entrevistas">
-            <a href="https://www.youtube.com/watch?v=QehWhQvP7eM" target="_blank" rel="noopener noreferrer">
-              TalkChão - Aline Belli
-            </a>
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Portfólio</h2>
           </div>
 
-          <div class="portfolio-item filter-publicados">
-            <a href="https://nossotal.com.br/a-jornada-de-gelza-arte-e-resiliencia/" target="_blank"
-              rel="noopener noreferrer">
-              A jornada de Gelza: arte e resiliência
-            </a>
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">Todos</li>
+                <li data-filter=".filter-publicados">Publicados</li>
+                <li data-filter=".filter-entrevistas">Entrevistas</li>
+                <li data-filter=".filter-roteiro">Roteiros de Podcast</li>
+                <li data-filter=".filter-academicos">Trabalhos acadêmicos</li>
+                <li data-filter=".filter-podcasts">Podcasts</li>
+                <!-- <li data-filter=".filter-web">Pessoais</li> -->
+              </ul>
+            </div>
           </div>
 
-          <div class="portfolio-item filter-publicados">
-            <a href="https://www.youtube.com/watch?v=vp34KsNE7Qg" target="_blank" rel="noopener noreferrer">
-              Edith Gaertner: mulher à frente de seu tempo na Blumenau Colonial
-            </a>
-          </div>
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="portfolio-item filter-entrevistas">
+              <a
+                href="https://www.youtube.com/watch?v=QehWhQvP7eM"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                TalkChão - Aline Belli
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-publicados">
-            <a href="https://omunicipioblumenau.com.br/me-falta-espaco-para-guardar-meus-livros-fascinado-pela-leitura-professor-inspira-academicos-da-furb/"
-              target="_blank" rel="noopener noreferrer">
-              Um professor para além da sala de aula
-            </a>
-          </div>
+            <div class="portfolio-item filter-publicados">
+              <a
+                href="https://nossotal.com.br/a-jornada-de-gelza-arte-e-resiliencia/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                A jornada de Gelza: arte e resiliência
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-publicados">
-            <a href="https://omunicipioblumenau.com.br/pesquisa-da-furb-investiga-habitos-de-uso-da-bicicleta-entre-universitarios/"
-              target="_blank" rel="noopener noreferrer">
-              Pesquisa da FURB investiga os hábitos de uso da bicicleta entre universitários
-            </a>
-          </div>
+            <div class="portfolio-item filter-publicados">
+              <a
+                href="https://www.youtube.com/watch?v=vp34KsNE7Qg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Edith Gaertner: mulher à frente de seu tempo na Blumenau
+                Colonial
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos filter-podcasts">
-            <a href="https://drive.google.com/file/d/1Iia95eU0TYdpV81xecHprSxe62SryPSS/view" target="_blank"
-              rel="noopener noreferrer">
-              O mundo Mágico do Rádio (PODCAST)
-            </a>
-          </div>
+            <div class="portfolio-item filter-publicados">
+              <a
+                href="https://omunicipioblumenau.com.br/me-falta-espaco-para-guardar-meus-livros-fascinado-pela-leitura-professor-inspira-academicos-da-furb/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Um professor para além da sala de aula
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos filter-podcasts">
-            <a href="https://drive.google.com/file/d/1e2NloM1MhNc4zX-sCbf5730cgyQLEKWl/view?usp=sharing" target="_blank"
-              rel="noopener noreferrer">
-              Papo de Segunda - Projeto Bugio com Zelinda Braga (PODCAST)
-            </a>
-          </div>
+            <div class="portfolio-item filter-publicados">
+              <a
+                href="https://omunicipioblumenau.com.br/pesquisa-da-furb-investiga-habitos-de-uso-da-bicicleta-entre-universitarios/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pesquisa da FURB investiga os hábitos de uso da bicicleta entre
+                universitários
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos filter-podcasts">
-            <a href="https://drive.google.com/file/d/1krwyEwDhb8Ba2qYS9J1TCxHPT1p-_6h0/view?usp=sharing" target="_blank"
-              rel="noopener noreferrer">
-              Retalhos do tempo - Uma jornada pela história do Brasil (PODCAST)
-            </a>
-          </div>
+            <div class="portfolio-item filter-academicos filter-podcasts">
+              <a
+                href="https://drive.google.com/file/d/1Iia95eU0TYdpV81xecHprSxe62SryPSS/view"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                O mundo Mágico do Rádio (PODCAST)
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1wVsNx82XXkmqD9tx7BTkP6XfUg7Zp-eX" target="_blank"
-              rel="noopener noreferrer">
-              Organizações ambientalistas protestam contra o atropelamento de animais no Pantanal
-            </a>
-          </div>
+            <div class="portfolio-item filter-academicos filter-podcasts">
+              <a
+                href="https://drive.google.com/file/d/1e2NloM1MhNc4zX-sCbf5730cgyQLEKWl/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Papo de Segunda - Projeto Bugio com Zelinda Braga (PODCAST)
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1uWOioju1ez0N8qMvqLIdMQaogqKKvPnN" target="_blank"
-              rel="noopener noreferrer">
-              Meliponário em Florianópolis
-            </a>
-          </div>
+            <div class="portfolio-item filter-academicos filter-podcasts">
+              <a
+                href="https://drive.google.com/file/d/1krwyEwDhb8Ba2qYS9J1TCxHPT1p-_6h0/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Retalhos do tempo - Uma jornada pela história do Brasil
+                (PODCAST)
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1uWOioju1ez0N8qMvqLIdMQaogqKKvPnN" target="_blank"
-              rel="noopener noreferrer">
-              Transformação do esgoto doméstico em gás de cozinha
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1wVsNx82XXkmqD9tx7BTkP6XfUg7Zp-eX"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Organizações ambientalistas protestam contra o atropelamento de
+                animais no Pantanal
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1WTisKFlHD6SYRRmdPTkffFzloBP98G0npmNWA0L3ziU" target="_blank"
-              rel="noopener noreferrer">
-              Cabelos humanos podem ajudar a limpar os oceanos
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1uWOioju1ez0N8qMvqLIdMQaogqKKvPnN"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Meliponário em Florianópolis
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1U9MQJyma3NJNwfrSJoq2LBvPXJs-fZ0s" target="_blank"
-              rel="noopener noreferrer">
-              Projeto apresenta dados da flora brasileira ameaçada de extinção
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1uWOioju1ez0N8qMvqLIdMQaogqKKvPnN"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Transformação do esgoto doméstico em gás de cozinha
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1OWVPXfm4QmlottNDZg3GuOuNUGE47XmG" target="_blank"
-              rel="noopener noreferrer">
-              Projeto propõe usar baleias para armazenamento de CO2
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1WTisKFlHD6SYRRmdPTkffFzloBP98G0npmNWA0L3ziU"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cabelos humanos podem ajudar a limpar os oceanos
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1Mgxd40pG7eCz1-gezgxvnUuxaYcBnVZe" target="_blank"
-              rel="noopener noreferrer">
-              Blumenau ganha primeiro espaço público de carregamento de carros elétricos
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1U9MQJyma3NJNwfrSJoq2LBvPXJs-fZ0s"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Projeto apresenta dados da flora brasileira ameaçada de extinção
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1GFFWLI0voSwrQavIBk7NIiltYAeuqhjNPDsxMBS3McI" target="_blank"
-              rel="noopener noreferrer">
-              Lei assegura vagas preferenciais para pessoas com fibromialgia em Blumenau
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1OWVPXfm4QmlottNDZg3GuOuNUGE47XmG"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Projeto propõe usar baleias para armazenamento de CO2
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1BDHz1Ru4PoBpq0uCEtruLuv9Sc2ojLWN" target="_blank"
-              rel="noopener noreferrer">
-              Restaurante popular em Florianópolis
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1Mgxd40pG7eCz1-gezgxvnUuxaYcBnVZe"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blumenau ganha primeiro espaço público de carregamento de carros
+                elétricos
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1AoL1pVjfX2A9yrIP-IrWL4KU_zkKzyp6" target="_blank"
-              rel="noopener noreferrer">
-              ONU adota tratado histórico para proteger o alto-mar
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1GFFWLI0voSwrQavIBk7NIiltYAeuqhjNPDsxMBS3McI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lei assegura vagas preferenciais para pessoas com fibromialgia
+                em Blumenau
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1AacgRpBpOBYSFZmRIFklG8Uzc8EsB3b6" target="_blank"
-              rel="noopener noreferrer">
-              Tijolos sustentáveis
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1BDHz1Ru4PoBpq0uCEtruLuv9Sc2ojLWN"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Restaurante popular em Florianópolis
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/18vN4zZboSYsdGSQSrFqPM0nxlj7ns2Wt" target="_blank"
-              rel="noopener noreferrer">
-              Coletores de água de neblina
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1AoL1pVjfX2A9yrIP-IrWL4KU_zkKzyp6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                ONU adota tratado histórico para proteger o alto-mar
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/164c0vzZ_8GYAEU2UAiIaTNhUNQswmu6f" target="_blank"
-              rel="noopener noreferrer">
-              Fenômenos El Niño e La Niña
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1AacgRpBpOBYSFZmRIFklG8Uzc8EsB3b6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tijolos sustentáveis
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/13wfOzDcsvTaP-iatG0fOZVVO51_KJ5D-" target="_blank"
-              rel="noopener noreferrer">
-              Estudo aponta que soneca pode retardar o envelhecimento do cérebro
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/18vN4zZboSYsdGSQSrFqPM0nxlj7ns2Wt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coletores de água de neblina
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1399To5hPyE60UjONw5jTquJtnnhvb6t6" target="_blank"
-              rel="noopener noreferrer">
-              França proíbe voos de curta duração dentro do país
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/164c0vzZ_8GYAEU2UAiIaTNhUNQswmu6f"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fenômenos El Niño e La Niña
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/12N7DC5V4KSTsOWqYHGxptX37I6lSwnNSaydQTJ59h78" target="_blank"
-              rel="noopener noreferrer">
-              Projeto Bugio
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/13wfOzDcsvTaP-iatG0fOZVVO51_KJ5D-"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Estudo aponta que soneca pode retardar o envelhecimento do
+                cérebro
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1KXLeC9U0In3ZdUQTL9jVEtH0yzMhKxVo" target="_blank"
-              rel="noopener noreferrer">
-              Balneário Camboriú terá ônibus grátis por 6 meses
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1399To5hPyE60UjONw5jTquJtnnhvb6t6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                França proíbe voos de curta duração dentro do país
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1k7rRq54sAgcHvYQ1lN7SHyo1qEqaGGVo" target="_blank"
-              rel="noopener noreferrer">
-              6 melhores alimentos para o cérebro
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/12N7DC5V4KSTsOWqYHGxptX37I6lSwnNSaydQTJ59h78"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Projeto Bugio
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1qPrP31lGFFcFPB0xRGokBAO8QN9rxuLVbdq_u6ZyCeA" target="_blank"
-              rel="noopener noreferrer">
-              Alimentos que demandam atenção especial ao serem consumidos
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1KXLeC9U0In3ZdUQTL9jVEtH0yzMhKxVo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Balneário Camboriú terá ônibus grátis por 6 meses
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1ZKcdyrDlZYGyfC9Y57jB-aWaKk27qY2pnk64_C022iA" target="_blank"
-              rel="noopener noreferrer">
-              Temperatura oceânica atinge recorde histórico
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1k7rRq54sAgcHvYQ1lN7SHyo1qEqaGGVo"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                6 melhores alimentos para o cérebro
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1dDGF7bpMHk2bx_2fDj-nvQQ5DzjE1gvv-lgUlCfcW6U" target="_blank"
-              rel="noopener noreferrer">
-              Lixeira que recolhe lixo no mar
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1qPrP31lGFFcFPB0xRGokBAO8QN9rxuLVbdq_u6ZyCeA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Alimentos que demandam atenção especial ao serem consumidos
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1dDGF7bpMHk2bx_2fDj-nvQQ5DzjE1gvv-lgUlCfcW6U" target="_blank"
-              rel="noopener noreferrer">
-              Lixeira que recolhe lixo no mar
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1ZKcdyrDlZYGyfC9Y57jB-aWaKk27qY2pnk64_C022iA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Temperatura oceânica atinge recorde histórico
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/11f-yMUFomFbAy_s0Rku0y90ZHz3CTDZz8XSzRvVqHRs" target="_blank"
-              rel="noopener noreferrer">
-              Plantas Amazônicas
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1dDGF7bpMHk2bx_2fDj-nvQQ5DzjE1gvv-lgUlCfcW6U"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lixeira que recolhe lixo no mar
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-roteiro">
-            <a href="https://docs.google.com/document/d/1eRBoWBVv9wjqyY2RxYo0ONn9dBrg67W5opLuLjTkK-k" target="_blank"
-              rel="noopener noreferrer">
-              Antiga técnica Chinesa que dispensa o uso do ar-condicionado
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1dDGF7bpMHk2bx_2fDj-nvQQ5DzjE1gvv-lgUlCfcW6U"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lixeira que recolhe lixo no mar
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos">
-            <a href="https://docs.google.com/document/d/1Xyi3q5DYsJkuZM93vyec9MhB2_IXoKR5" target="_blank"
-              rel="noopener noreferrer">
-              Um professor para além da sala de aula
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/11f-yMUFomFbAy_s0Rku0y90ZHz3CTDZz8XSzRvVqHRs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Plantas Amazônicas
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos">
-            <a href="https://docs.google.com/document/d/1NFSSnhxBkgBzu6Z6QxDc2w-2lddA86IjA41g_gABfz4" target="_blank"
-              rel="noopener noreferrer">
-              Organizações ambientalistas protestam contra o atropelamento de animais no Pantanal
-            </a>
-          </div>
+            <div class="portfolio-item filter-roteiro">
+              <a
+                href="https://docs.google.com/document/d/1eRBoWBVv9wjqyY2RxYo0ONn9dBrg67W5opLuLjTkK-k"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Antiga técnica Chinesa que dispensa o uso do ar-condicionado
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos">
-            <a href="https://docs.google.com/document/d/17WAVAT9XuR1UayfKJWu1xh-869nx1kv9c9Iah5CVG38" target="_blank"
-              rel="noopener noreferrer">
-              Como utilizar plataformas digitais para aprimorar o jornalismo
-            </a>
-          </div>
+            <div class="portfolio-item filter-academicos">
+              <a
+                href="https://docs.google.com/document/d/1Xyi3q5DYsJkuZM93vyec9MhB2_IXoKR5"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Um professor para além da sala de aula
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos">
-            <a href="https://docs.google.com/document/d/1WVaEbGGv0GqAFcAgqHOD02JFQoeKG-iu" target="_blank"
-              rel="noopener noreferrer">
-              Pesquisa da FURB investiga os hábitos de uso da bicicleta entre universitários
-            </a>
-          </div>
+            <div class="portfolio-item filter-academicos">
+              <a
+                href="https://docs.google.com/document/d/1NFSSnhxBkgBzu6Z6QxDc2w-2lddA86IjA41g_gABfz4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Organizações ambientalistas protestam contra o atropelamento de
+                animais no Pantanal
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos">
-            <a href="https://docs.google.com/document/d/1BsbfSiQb3GZtKosqsWuYbXHRzU2XpM5c" target="_blank"
-              rel="noopener noreferrer">
-              Projeto Bugio transforma a educação ambiental em jogo eletrônico
-            </a>
-          </div>
+            <div class="portfolio-item filter-academicos">
+              <a
+                href="https://docs.google.com/document/d/17WAVAT9XuR1UayfKJWu1xh-869nx1kv9c9Iah5CVG38"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Como utilizar plataformas digitais para aprimorar o jornalismo
+              </a>
+            </div>
 
-          <div class="portfolio-item filter-academicos">
-            <a href="https://docs.google.com/document/d/1kaztYXT9sEwz_b49Kucbl42-s2GAFMDoRyrm8tZfCEw" target="_blank"
-              rel="noopener noreferrer">
-              Entre a Lei e a Vida: A Luta Entre a Legalização e a Proibição do Aborto no Brasil
-            </a>
-          </div>
+            <div class="portfolio-item filter-academicos">
+              <a
+                href="https://docs.google.com/document/d/1WVaEbGGv0GqAFcAgqHOD02JFQoeKG-iu"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Pesquisa da FURB investiga os hábitos de uso da bicicleta entre
+                universitários
+              </a>
+            </div>
 
-          <!-- <div class=" portfolio-item filter-web">
+            <div class="portfolio-item filter-academicos">
+              <a
+                href="https://docs.google.com/document/d/1BsbfSiQb3GZtKosqsWuYbXHRzU2XpM5c"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Projeto Bugio transforma a educação ambiental em jogo eletrônico
+              </a>
+            </div>
+
+            <div class="portfolio-item filter-academicos">
+              <a
+                href="https://docs.google.com/document/d/1kaztYXT9sEwz_b49Kucbl42-s2GAFMDoRyrm8tZfCEw"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Entre a Lei e a Vida: A Luta Entre a Legalização e a Proibição
+                do Aborto no Brasil
+              </a>
+            </div>
+
+            <!-- <div class=" portfolio-item filter-web">
             <a href="https://docs.google.com/document/d/1wVsNx82XXkmqD9tx7BTkP6XfUg7Zp-e" target="_blank" rel="noopener noreferrer">
               ...
             </a>
@@ -525,260 +754,409 @@
               ...
             </a>
           </div> -->
-
+          </div>
         </div>
+      </section>
+      <!-- End Portfolio Section -->
 
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Habilidades</h2>
+          </div>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Habilidades</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-left">
-            <div class="row">
-              <div class="col-lg-6">
-                <h3>Interpessoais</h3>
-                <ul>
-                  <li> <span>Ágil </span></li>
-                  <li> <span>Criativa </span></li>
-                  <li> <span>Comunicativa</span></li>
-                  <li> <span>Comprometida </span></li>
-                  <li> <span>Apaixonada por redação </span></li>
-                  <li> <span>Ótima relação interpessoal </span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <h3>Técnicas</h3>
-                <ul>
-                  <li> <span>Edição de vídeo (Adobe Premiere) </span></li>
-                  <li> <span>Edição de imagem (Adobe Photoshop) </span></li>
-                  <li> <span>Edição de áudio (Sound Forge, REAPER, Audacity)</span></li>
-                </ul>
+          <div class="row skills-content">
+            <div
+              class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate"
+              data-aos="fade-left"
+            >
+              <div class="row">
+                <div class="col-lg-6">
+                  <h3>Interpessoais</h3>
+                  <ul>
+                    <li><span>Ágil </span></li>
+                    <li><span>Criativa </span></li>
+                    <li><span>Comunicativa</span></li>
+                    <li><span>Comprometida </span></li>
+                    <li><span>Apaixonada por redação </span></li>
+                    <li><span>Ótima relação interpessoal </span></li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <h3>Técnicas</h3>
+                  <ul>
+                    <li><span>Edição de vídeo (Adobe Premiere) </span></li>
+                    <li><span>Edição de imagem (Adobe Photoshop) </span></li>
+                    <li>
+                      <span
+                        >Edição de áudio (Sound Forge, REAPER, Audacity)</span
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
+      </section>
+      <!-- End Skills Section -->
 
-      </div>
-    </section>
-    <!-- End Skills Section -->
+      <!-- ======= Perspectives Section ======= -->
 
-    <!-- ======= Perspectives Section ======= -->
-    <section id="perspectives" class="perspectives">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Perspectivas Jornalísticas Atualizadas</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12" data-aos="fade-up">
-            <p class="fst-italic">
-              Ao longo das aulas, refletimos sobre como o jornalismo se transforma diante das novas tecnologias, das
-              redes sociais digitais e dos diferentes modos de consumo de informação. O cenário atual é marcado pela
-              velocidade e pela convergência de mídias, o que exige do jornalista um maior senso crítico e a capacidade
-              de dialogar com múltiplas plataformas.
-            </p>
-            <p class="fst-italic">
-              Também foram exploradas questões como a interatividade crescente entre públicos e veículos, a reinvenção
-              de formatos tradicionais no ambiente digital, os desafios da credibilidade nas mídias online e o papel das
-              narrativas multimidiáticas na construção da notícia. Além disso, discutimos o uso ético e transparente da
-              inteligência artificial no processo jornalístico e como os fatores sociais, culturais e tecnológicos
-              influenciam a produção e a circulação das informações.
-            </p>
-            <p class="fst-italic">
-              Esses conteúdos ofereceram uma visão ampla do jornalismo contemporâneo, reforçando a importância de
-              atualização constante, pensamento crítico e domínio técnico para atuar em um cenário informativo em
-              permanente transformação.
-            </p>
-            <div class="mt-4 text-center">
-              <a href="https://drive.google.com/drive/folders/1-VRfM7pf70tD4YRNqg4eJ2qXTvvXTV8I" target="_blank"
-                rel="noopener noreferrer" class="btn btn-primary">
-                Acessar Conteúdos Completos
-              </a>
-            </div>
+      <!-- ======= Videos Section ======= -->
+      <section id="videos" class="videos section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Vídeos</h2>
+            <p>Conteúdos produzidos na Senior Sistemas</p>
           </div>
-        </div>
 
-      </div>
-    </section>
-    <!-- End Perspectives Section -->
-
-    <!-- ======= Videos Section ======= -->
-    <section id="videos" class="videos section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Vídeos</h2>
-          <p>Conteúdos produzidos na Senior Sistemas</p>
-        </div>
-
-        <div class="row justify-content-center" data-aos="fade-up">
-          <div class="col-lg-6 col-md-6 mb-4">
-            <div class="video-container">
-              <blockquote class="instagram-media" data-instgrm-captioned
-                data-instgrm-permalink="https://www.instagram.com/seniorsistemas/reel/DKhq1kTvalQ/"
-                data-instgrm-version="14"
-                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                <div style="padding:16px;">
-                  <a href="https://www.instagram.com/seniorsistemas/reel/DKhq1kTvalQ/"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                    <div style=" display: flex; flex-direction: row; align-items: center;">
+          <div class="row justify-content-center" data-aos="fade-up">
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="video-container">
+                <blockquote
+                  class="instagram-media"
+                  data-instgrm-captioned
+                  data-instgrm-permalink="https://www.instagram.com/seniorsistemas/reel/DKhq1kTvalQ/"
+                  data-instgrm-version="14"
+                  style="
+                    background: #fff;
+                    border: 0;
+                    border-radius: 3px;
+                    box-shadow:
+                      0 0 1px 0 rgba(0, 0, 0, 0.5),
+                      0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                    margin: 1px;
+                    max-width: 540px;
+                    min-width: 326px;
+                    padding: 0;
+                    width: 99.375%;
+                    width: -webkit-calc(100% - 2px);
+                    width: calc(100% - 2px);
+                  "
+                >
+                  <div style="padding: 16px">
+                    <a
+                      href="https://www.instagram.com/seniorsistemas/reel/DKhq1kTvalQ/"
+                      style="
+                        background: #ffffff;
+                        line-height: 0;
+                        padding: 0 0;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 100%;
+                      "
+                      target="_blank"
+                    >
                       <div
-                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                      </div>
-                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                        "
+                      >
                         <div
-                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
+                          style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 40px;
+                            margin-right: 14px;
+                            width: 40px;
+                          "
+                        ></div>
                         <div
-                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                            justify-content: center;
+                          "
+                        >
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 4px;
+                              flex-grow: 0;
+                              height: 14px;
+                              margin-bottom: 6px;
+                              width: 100px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 4px;
+                              flex-grow: 0;
+                              height: 14px;
+                              width: 60px;
+                            "
+                          ></div>
                         </div>
                       </div>
-                    </div>
-                    <div style="padding: 19% 0;"></div>
-                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                      <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                        xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                            <g>
-                              <path
-                                d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                              </path>
+                      <div style="padding: 19% 0"></div>
+                      <div
+                        style="
+                          display: block;
+                          height: 50px;
+                          margin: 0 auto 12px;
+                          width: 50px;
+                        "
+                      >
+                        <svg
+                          width="50px"
+                          height="50px"
+                          viewBox="0 0 60 60"
+                          version="1.1"
+                          xmlns="https://www.w3.org/2000/svg"
+                          xmlns:xlink="https://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(-511.000000, -20.000000)"
+                              fill="#000000"
+                            >
+                              <g>
+                                <path
+                                  d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                                ></path>
+                              </g>
                             </g>
                           </g>
-                        </g>
-                      </svg>
-                    </div>
-                    <div style="padding-top: 8px;">
-                      <div
-                        style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Ver esta publicação no Instagram</div>
-                    </div>
-                  </a>
-                </div>
-              </blockquote>
+                        </svg>
+                      </div>
+                      <div style="padding-top: 8px">
+                        <div
+                          style="
+                            color: #3897f0;
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 550;
+                            line-height: 18px;
+                          "
+                        >
+                          Ver esta publicação no Instagram
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </blockquote>
+              </div>
             </div>
-          </div>
 
-          <div class="col-lg-6 col-md-6 mb-4">
-            <div class="video-container">
-              <blockquote class="instagram-media" data-instgrm-captioned
-                data-instgrm-permalink="https://www.instagram.com/seniorsistemas/reel/DDfhSrUt8cV/"
-                data-instgrm-version="14"
-                style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
-                <div style="padding:16px;">
-                  <a href="https://www.instagram.com/seniorsistemas/reel/DDfhSrUt8cV/"
-                    style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;"
-                    target="_blank">
-                    <div style=" display: flex; flex-direction: row; align-items: center;">
+            <div class="col-lg-6 col-md-6 mb-4">
+              <div class="video-container">
+                <blockquote
+                  class="instagram-media"
+                  data-instgrm-captioned
+                  data-instgrm-permalink="https://www.instagram.com/seniorsistemas/reel/DDfhSrUt8cV/"
+                  data-instgrm-version="14"
+                  style="
+                    background: #fff;
+                    border: 0;
+                    border-radius: 3px;
+                    box-shadow:
+                      0 0 1px 0 rgba(0, 0, 0, 0.5),
+                      0 1px 10px 0 rgba(0, 0, 0, 0.15);
+                    margin: 1px;
+                    max-width: 540px;
+                    min-width: 326px;
+                    padding: 0;
+                    width: 99.375%;
+                    width: -webkit-calc(100% - 2px);
+                    width: calc(100% - 2px);
+                  "
+                >
+                  <div style="padding: 16px">
+                    <a
+                      href="https://www.instagram.com/seniorsistemas/reel/DDfhSrUt8cV/"
+                      style="
+                        background: #ffffff;
+                        line-height: 0;
+                        padding: 0 0;
+                        text-align: center;
+                        text-decoration: none;
+                        width: 100%;
+                      "
+                      target="_blank"
+                    >
                       <div
-                        style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-                      </div>
-                      <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
+                        style="
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                        "
+                      >
                         <div
-                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-                        </div>
+                          style="
+                            background-color: #f4f4f4;
+                            border-radius: 50%;
+                            flex-grow: 0;
+                            height: 40px;
+                            margin-right: 14px;
+                            width: 40px;
+                          "
+                        ></div>
                         <div
-                          style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
+                          style="
+                            display: flex;
+                            flex-direction: column;
+                            flex-grow: 1;
+                            justify-content: center;
+                          "
+                        >
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 4px;
+                              flex-grow: 0;
+                              height: 14px;
+                              margin-bottom: 6px;
+                              width: 100px;
+                            "
+                          ></div>
+                          <div
+                            style="
+                              background-color: #f4f4f4;
+                              border-radius: 4px;
+                              flex-grow: 0;
+                              height: 14px;
+                              width: 60px;
+                            "
+                          ></div>
                         </div>
                       </div>
-                    </div>
-                    <div style="padding: 19% 0;"></div>
-                    <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-                      <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1"
-                        xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink">
-                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g transform="translate(-511.000000, -20.000000)" fill="#000000">
-                            <g>
-                              <path
-                                d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631">
-                              </path>
+                      <div style="padding: 19% 0"></div>
+                      <div
+                        style="
+                          display: block;
+                          height: 50px;
+                          margin: 0 auto 12px;
+                          width: 50px;
+                        "
+                      >
+                        <svg
+                          width="50px"
+                          height="50px"
+                          viewBox="0 0 60 60"
+                          version="1.1"
+                          xmlns="https://www.w3.org/2000/svg"
+                          xmlns:xlink="https://www.w3.org/1999/xlink"
+                        >
+                          <g
+                            stroke="none"
+                            stroke-width="1"
+                            fill="none"
+                            fill-rule="evenodd"
+                          >
+                            <g
+                              transform="translate(-511.000000, -20.000000)"
+                              fill="#000000"
+                            >
+                              <g>
+                                <path
+                                  d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"
+                                ></path>
+                              </g>
                             </g>
                           </g>
-                        </g>
-                      </svg>
-                    </div>
-                    <div style="padding-top: 8px;">
-                      <div
-                        style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-                        Ver esta publicação no Instagram</div>
-                    </div>
-                  </a>
-                </div>
-              </blockquote>
+                        </svg>
+                      </div>
+                      <div style="padding-top: 8px">
+                        <div
+                          style="
+                            color: #3897f0;
+                            font-family: Arial, sans-serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 550;
+                            line-height: 18px;
+                          "
+                        >
+                          Ver esta publicação no Instagram
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </blockquote>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+      <!-- End Videos Section -->
+      <script async src="//www.instagram.com/embed.js"></script>
 
-      </div>
-    </section>
-    <!-- End Videos Section -->
-    <script async src="//www.instagram.com/embed.js"></script>
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contatos</h2>
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contatos</h2>
-
-          <div style="display: flex;">
-            <i class="bi bi-envelope"></i>
-            <p style="margin-left: 12px;">cacanemaloz17@gmail.com</p>
-          </div>
-          <div style="display: flex;">
-            <i class="bi bi-instagram"></i>
-            <a style="margin-left: 12px;" target="_blank" href="https://www.instagram.com/camalozz/">Instagram</a>
-          </div>
-          <div style="display: flex;">
-            <i class="bi bi-envelope"></i>
-            <a style="margin-left: 12px;" target="_blank"
-              href="https://www.linkedin.com/in/ca%C3%A7ane-maloz-612406235/">Linkedin</a>
+            <div style="display: flex">
+              <i class="bi bi-envelope"></i>
+              <p style="margin-left: 12px">cacanemaloz17@gmail.com</p>
+            </div>
+            <div style="display: flex">
+              <i class="bi bi-instagram"></i>
+              <a
+                style="margin-left: 12px"
+                target="_blank"
+                href="https://www.instagram.com/camalozz/"
+                >Instagram</a
+              >
+            </div>
+            <div style="display: flex">
+              <i class="bi bi-envelope"></i>
+              <a
+                style="margin-left: 12px"
+                target="_blank"
+                href="https://www.linkedin.com/in/ca%C3%A7ane-maloz-612406235/"
+                >Linkedin</a
+              >
+            </div>
           </div>
         </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>iPortfolio</span></strong>
+        </div>
       </div>
-    </section><!-- End Contact Section -->
+    </footer>
+    <!-- End  Footer -->
 
-  </main><!-- End #main -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
